@@ -3,7 +3,7 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
-# Create the group for the subcommands.
+# Create the small-angle group for the subcommands.
 @click.group()
 def cmd_group():
     pass
@@ -14,13 +14,11 @@ def cmd_group():
     "-n",
     "--number",
     default=10,
+    help="number (int): the number of values used from the interval."
 )
 # Gives values of sin for "number" values equally seperated in [0, 2pi].
 def sin(number):
     """Gives values of sin for "number" values equally seperated in [0, 2pi].
-
-    Args:
-        number (int): the number of values used from the interval.
 
     Side Effects:
         Prints the sin(x) values next to the x values from the interval.
@@ -36,13 +34,11 @@ def sin(number):
     "-n",
     "--number",
     default=10,
+    help="number (int): the number of values used from the interval."
 )
 # 
 def tan(number):
     """Gives values of tan for "number" values equally seperated in [0, 2pi].
-
-    Args:
-        number (int): the number of values used from the interval.
 
     Side Effects:
         Prints the tan(x) values next to the x values from the interval.
