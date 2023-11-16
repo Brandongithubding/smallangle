@@ -16,7 +16,6 @@ def cmd_group():
     default=10,
     help="number (int): the number of values used from the interval."
 )
-# Gives values of sin for "number" values equally seperated in [0, 2pi].
 def sin(number):
     """Gives values of sin for "number" values equally seperated in [0, 2pi].
 
@@ -36,7 +35,6 @@ def sin(number):
     default=10,
     help="number (int): the number of values used from the interval."
 )
-# 
 def tan(number):
     """Gives values of tan for "number" values equally seperated in [0, 2pi].
 
@@ -57,11 +55,10 @@ def tan(number):
     default=3,
     help="The decimal precision that is used to approximate."
 )
-# Gives the small-angle approximation for an accuracy.
-# This is the highest angle for which x can be used instead of sin(x)
-# while still keeping the wanted amount of accuracy.
 def approx(accuracy, decimals):
-    """Gives the highest angle so that the small-angle inequality holds.
+    """Gives the highest angle so that the small-angle inequality holds. This is
+    the highest angle for which x can be used instead of sin(x) while still
+    keeping the wanted amount of accuracy.
 
     Args:
         accuracy (float): The accuracy used in the small-angle inequality.
