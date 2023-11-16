@@ -59,6 +59,7 @@ def tan(number):
     "-d",
     "--decimals",
     default=3,
+    help="The decimal precision that is used to approximate."
 )
 # Gives the small-angle approximation for an accuracy.
 # This is the highest angle for which x can be used instead of sin(x)
@@ -68,9 +69,6 @@ def approx(accuracy, decimals):
 
     Args:
         accuracy (float): The accuracy used in the small-angle inequality.
-        
-    Options:
-    -n decimals (int): The precision in decimals that is used to approximate.
 
     Side Effects:
         Prints the small-angle approximation.
