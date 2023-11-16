@@ -14,7 +14,7 @@ def cmd_group():
     "-n",
     "--number",
     default=10,
-    help="number (int): the number of values used from the interval."
+    help="The number of values used from the interval."
 )
 def sin(number):
     """Gives values of sin for "number" values equally seperated in [0, 2pi].
@@ -33,7 +33,7 @@ def sin(number):
     "-n",
     "--number",
     default=10,
-    help="number (int): the number of values used from the interval."
+    help="The number of values used from the interval."
 )
 def tan(number):
     """Gives values of tan for "number" values equally seperated in [0, 2pi].
